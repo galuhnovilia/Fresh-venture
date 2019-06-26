@@ -7026,4 +7026,40 @@ a.text-dark:hover, a.text-dark:focus {
 .btn-secondary {
   color: #fff; }
 
+.bg-secondary {
+  background-color: #A5A5A5 !important; }
+
+.discount-bar {
+  color: white;
+  padding: .6rem 0; }
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+/* 
+  ##Device = Desktops
+  ##Screen = B/w 1200px to 1600px
+*/
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
 /*# sourceMappingURL=theme.min.css.map */

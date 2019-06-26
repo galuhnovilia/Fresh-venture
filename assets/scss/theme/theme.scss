@@ -8,6 +8,13 @@
 // you can put it in partials/_bs.scss
 //
 
-.btn-secondary {
-	color: $white;
-}
+.btn-secondary {color: $white;}
+.bg-secondary {background-color: #A5A5A5 !important;}
+
+// +++++ DISCOUNT BAR +++++ //
+.discount-bar{ color: white;padding: .6rem 0;}
+// +++++ DISCOUNT BAR +++++ //
+
+// +++++ RESPONSIVE DEVICE +++++ //
+@import 'partials/_responsive.scss'
+// +++++ END RESPONSIVE +++++ //
