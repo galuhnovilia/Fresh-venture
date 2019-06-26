@@ -25,6 +25,34 @@
 }
 
 
+
+/* 
+  ##Device = Ipad
+  ##Screen = 992px to higher resolution desktops
+*/
+
+@media (min-width: 992px){
+// +++++ HEADER +++++ //
+
+// +++++ END HEADER +++++ //
+  
+}
+
+@media (min-width: 768px){
+  .col-md-20{
+    flex: 0 0 20%!important;
+    max-width: 20%!important;
+  }
+  .col-md-40{
+    flex: 0 0 40%!important;
+    max-width: 40%!important;
+  }
+  .col-md-60{
+    flex: 0 0 60%!important;
+    max-width: 60%!important;
+  }
+}
+
 /* 
   ##Device = Tablets, Ipads (portrait)
   ##Screen = B/w 768px to 1024px

@@ -7,14 +7,71 @@
 // If you want to override variable bootstrap for consistency, 
 // you can put it in partials/_bs.scss
 //
-
+$light: #E1E1E1;
+$primary: #D6D6D6;
+$secondary: #A5A5A5;
 .btn-secondary {color: $white;}
-.bg-secondary {background-color: #A5A5A5 !important;}
+.btn-primary {background-color: $primary !important; border-color: $primary !important; color: grey !important;}
+.bg-secondary {background-color: $secondary !important;}
+.bg-light {background-color: $light !important;}
 
+// 
+.reverse-90 {transform: rotate(90deg);}
+.reverse-45 {transform: rotate(45deg);}
+.col-reverse{flex-direction: column-reverse;}
+.row-reverse{flex-direction: row-reverse;}
 // +++++ DISCOUNT BAR +++++ //
 .discount-bar{ color: white;padding: .6rem 0;}
 // +++++ DISCOUNT BAR +++++ //
 
+// +++++ HEADER +++++ //
+#header-top i {font-size: 13px;}
+#header-bottom{position: relative; .collapse:not(.show){display: block;}}
+// +++++ END HEADER +++++ //
+
+// +++++ JUMBOTRON +++++ //
+.jumbotron {
+    position: relative;
+    overflow: hidden;
+    background-color: black;
+}
+
+.jumbotron video {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /*  object-fit is not supported on IE  */
+    object-fit: cover;
+    opacity: 0.5;
+}
+
+.jumbotron .container {
+    z-index: 2;
+	position: relative;
+	padding: 120px 0;
+}
+// +++++ END JUMBOTRON +++++ //
+
+// +++++ NAVBAR MENU BOTTOM +++++ //
+#navbarNavBottom{
+	.dropup, .dropright, .dropdown, .dropleft {
+		position: inherit;
+	}
+	.navbar-nav .dropdown-menu {
+		position: absolute;
+		right: 0;
+		top: 47px;
+	}
+	.row-image {
+		text-align: center;
+		img {
+			width: 100%;
+		}
+	}
+}
+// +++++ END NAVBAR MENU BOTTOM +++++ //
 // +++++ RESPONSIVE DEVICE +++++ //
 @import 'partials/_responsive.scss'
 // +++++ END RESPONSIVE +++++ //
