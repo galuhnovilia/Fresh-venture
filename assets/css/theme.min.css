@@ -7024,18 +7024,27 @@ a.text-dark:hover, a.text-dark:focus {
     border-color: #dee2e6; } }
 
 .btn-secondary {
-  color: #fff; }
+  background-color: #9F9F9F;
+  color: #fff;
+  border-color: #9F9F9F; }
 
 .btn-primary {
-  background-color: #D6D6D6 !important;
-  border-color: #D6D6D6 !important;
-  color: grey !important; }
+  background-color: #D6D6D6;
+  border-color: #D6D6D6;
+  color: grey; }
+
+.btn-outline-secondary {
+  color: #9F9F9F;
+  border-color: #9F9F9F; }
 
 .bg-secondary {
   background-color: #A5A5A5 !important; }
 
 .bg-light {
   background-color: #E1E1E1 !important; }
+
+.bg-info {
+  background-color: #FAFAFA !important; }
 
 .reverse-90 {
   transform: rotate(90deg); }
@@ -7093,6 +7102,22 @@ a.text-dark:hover, a.text-dark:focus {
   text-align: center; }
   #navbarNavBottom .row-image img {
     width: 100%; }
+
+.list-of-products .box-product {
+  height: 435px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .list-of-products .box-product:hover {
+    background-color: white;
+    box-shadow: 3px 3px 13px -1px rgba(127, 127, 127, 0.5); }
+  .list-of-products .box-product .text-product {
+    padding: 35px 0 20px; }
+  .list-of-products .box-product .img-product {
+    padding: 28px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
 
 /* 
   ##Device = Desktops
