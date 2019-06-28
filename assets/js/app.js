@@ -10,6 +10,7 @@
 
         init: function($) {
             // app.select2();
+            app.slider();
         },
 
         onResize: function() {
@@ -25,6 +26,46 @@
                 $("select").select2();
             });
         },
+        slider:function(){
+            $('#products-slider').owlCarousel({
+                loop:true,
+                margin:10,
+                stagePadding: 30,
+                dots: false,
+                nav:true,
+                navText:["<div class='rounded-50'><i class='fa fa-chevron-left'></i></div>","<div class='rounded-50'><i class='fa fa-chevron-right'></i></div>"],
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    600:{
+                        items:3
+                    }
+                }
+            });
+            $('#hero-images-slider').owlCarousel({
+                loop:true,
+                dots: true,
+                items: 1,
+            });
+            
+            $('#review-slider').owlCarousel({
+                loop:true,
+                margin:10,
+                stagePadding: 30,
+                dots: false,
+                nav:true,
+                navText:["<div class='rounded-50'><i class='fa fa-chevron-left'></i></div>","<div class='rounded-50'><i class='fa fa-chevron-right'></i></div>"],
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    600:{
+                        items:4
+                    }
+                }
+            })
+        }
     }
 
     $(document).ready(function () {
