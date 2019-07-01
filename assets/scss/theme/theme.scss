@@ -29,7 +29,7 @@ $text:#7D7D7D;
 .row-reverse{flex-direction: row-reverse;}
 .rounded-50{border-radius: 50%;}
 // +++++ DISCOUNT BAR +++++ //
-.discount-bar{ color: white;padding: .6rem 0;}
+.discount-bar{padding: .6rem 0; h6{color: white;}}
 // +++++ DISCOUNT BAR +++++ //
 
 // +++++ HEADER +++++ //
@@ -325,6 +325,31 @@ footer{
 }
 // +++++ END FOOTER +++++ //
 
+// +++++ ORDER +++++ //
+section.our-history {
+	padding: 80px 0;
+	.row{ margin-bottom: 20px;}
+
+	.header {
+		padding: 10px 22px;
+		background-color: $light;
+		margin: 30px 0 25px;
+	}
+	.title {
+		font-weight: bold;
+	}
+	.box-of-order h6:not(.title) {
+		font-weight: 400;
+	}
+	.bg-grey {
+		background-color: $light;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
+// +++++ END ORDER +++++ //
 // +++++ RESPONSIVE DEVICE +++++ //
 @import 'partials/_responsive.scss';
 // +++++ END RESPONSIVE +++++ //

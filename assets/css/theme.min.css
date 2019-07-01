@@ -7068,8 +7068,9 @@ a.text-dark:hover, a.text-dark:focus {
   border-radius: 50%; }
 
 .discount-bar {
-  color: white;
   padding: .6rem 0; }
+  .discount-bar h6 {
+    color: white; }
 
 #header-top i {
   font-size: 13px; }
@@ -7285,6 +7286,9 @@ section.hero-image-slider {
   width: auto;
   margin: 0 auto; }
 
+.our-partners {
+  padding: 80px 0; }
+
 .search-product {
   height: 364px;
   padding: 20px;
@@ -7304,8 +7308,6 @@ section.hero-image-slider {
     display: flex;
     flex-direction: row;
     justify-self: flex-end; }
-.our-partners {
-  padding: 80px 0; }
 
 footer .footer-top {
   padding: 80px 0; }
@@ -7325,6 +7327,25 @@ footer .social-media {
     justify-content: center; }
     footer .social-media .rounded-50 i {
       color: white; }
+
+section.our-history {
+  padding: 80px 0; }
+  section.our-history .row {
+    margin-bottom: 20px; }
+  section.our-history .header {
+    padding: 10px 22px;
+    background-color: #E1E1E1;
+    margin: 30px 0 25px; }
+  section.our-history .title {
+    font-weight: bold; }
+  section.our-history .box-of-order h6:not(.title) {
+    font-weight: 400; }
+  section.our-history .bg-grey {
+    background-color: #E1E1E1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
 
 /* 
   ##Device = Desktops
