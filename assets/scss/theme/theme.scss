@@ -35,6 +35,20 @@ $text:#7D7D7D;
 // +++++ HEADER +++++ //
 #header-top i {font-size: 13px;}
 #header-bottom{position: relative; .collapse:not(.show){display: block;}}
+#btn-search{
+	display: none;
+	&.active{
+		display: block;
+	}
+}
+#form-search{
+	display: none;
+	&.active{
+		display: flex;
+		align-items: center;
+		i{margin-left: -20px;}
+	}
+}
 // +++++ END HEADER +++++ //
 
 // +++++ SLIDER +++++ //

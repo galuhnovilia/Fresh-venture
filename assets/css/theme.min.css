@@ -7079,6 +7079,19 @@ a.text-dark:hover, a.text-dark:focus {
   #header-bottom .collapse:not(.show) {
     display: block; }
 
+#btn-search {
+  display: none; }
+  #btn-search.active {
+    display: block; }
+
+#form-search {
+  display: none; }
+  #form-search.active {
+    display: flex;
+    align-items: center; }
+    #form-search.active i {
+      margin-left: -20px; }
+
 button.owl-prev, button.owl-next {
   position: absolute;
   top: 0;

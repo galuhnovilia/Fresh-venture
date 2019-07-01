@@ -10,7 +10,9 @@
 
         init: function($) {
             // app.select2();
+            app.navBar();
             app.slider();
+
         },
 
         onResize: function() {
@@ -25,6 +27,12 @@
             $(document).ready(function() {
                 $("select").select2();
             });
+        },
+        navBar:function(){
+            $('#btn-search').on('click',function(){
+                $(this).removeClass('active');
+                $('#form-search').addClass('active');
+            })
         },
         slider:function(){
             $('#products-slider').owlCarousel({
