@@ -51,8 +51,7 @@
             
             $('#review-slider').owlCarousel({
                 loop:true,
-                margin:10,
-                stagePadding: 30,
+                margin:20,
                 dots: false,
                 nav:true,
                 navText:["<div class='rounded-50'><i class='fa fa-chevron-left'></i></div>","<div class='rounded-50'><i class='fa fa-chevron-right'></i></div>"],
