@@ -28,6 +28,15 @@ $text:#7D7D7D;
 .col-reverse{flex-direction: column-reverse;}
 .row-reverse{flex-direction: row-reverse;}
 .rounded-50{border-radius: 50%;}
+[disabled],[readonly] {
+    background-color: transparent!important;
+    border: 0;
+    -webkit-appearance: none;
+	appearance: none;
+	border: 0;
+	box-shadow: none;
+	padding: 0;
+}
 // +++++ DISCOUNT BAR +++++ //
 .discount-bar{padding: .6rem 0; h6{color: white;}}
 // +++++ DISCOUNT BAR +++++ //
@@ -350,6 +359,16 @@ section.our-history {
 	}
 }
 // +++++ END ORDER +++++ //
+
+// +++++ CONTACT INFORMATION +++++ //
+section.contact-information{
+	padding: 80px 0;
+	h5.title{margin: 50px 0 20px;}
+	label {
+		font-weight: 700;
+    	font-size: 14px;
+	}
+}
 // +++++ RESPONSIVE DEVICE +++++ //
 @import 'partials/_responsive.scss';
 // +++++ END RESPONSIVE +++++ //

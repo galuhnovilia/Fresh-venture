@@ -7067,6 +7067,15 @@ a.text-dark:hover, a.text-dark:focus {
 .rounded-50 {
   border-radius: 50%; }
 
+[disabled], [readonly] {
+  background-color: transparent !important;
+  border: 0;
+  -webkit-appearance: none;
+  appearance: none;
+  border: 0;
+  box-shadow: none;
+  padding: 0; }
+
 .discount-bar {
   padding: .6rem 0; }
   .discount-bar h6 {
@@ -7346,6 +7355,14 @@ section.our-history {
     display: flex;
     align-items: center;
     justify-content: center; }
+
+section.contact-information {
+  padding: 80px 0; }
+  section.contact-information h5.title {
+    margin: 50px 0 20px; }
+  section.contact-information label {
+    font-weight: 700;
+    font-size: 14px; }
 
 /* 
   ##Device = Desktops
