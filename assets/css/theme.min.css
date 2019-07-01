@@ -7246,6 +7246,26 @@ section.hero-image-slider {
   width: auto;
   margin: 0 auto; }
 
+.search-product {
+  height: 364px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: #cecece; }
+  .search-product .product-image {
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .search-product .product-text {
+    padding: 20px 0; }
+  .search-product .product-text h5 {
+    font-size: 1rem; }
+  .search-product .product-actions {
+    display: flex;
+    flex-direction: row;
+    justify-self: flex-end; }
+
 /* 
   ##Device = Desktops
   ##Screen = 1281px to higher resolution desktops
