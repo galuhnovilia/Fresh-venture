@@ -368,6 +368,11 @@ section.contact-information{
 		font-weight: 700;
     	font-size: 14px;
 	}
+	.address-book{
+		.button-add-an-address{
+			margin: 50px 0;
+		}
+	}
 }
 // +++++ RESPONSIVE DEVICE +++++ //
 @import 'partials/_responsive.scss';
