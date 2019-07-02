@@ -71,6 +71,13 @@
                         items:4
                     }
                 }
+            });
+            $('#single-product-slider').owlCarousel({
+                loop:true,
+                dots: false,
+                nav: true,
+                items: 1,
+                navText:["<div class='rounded-50'><i class='fa fa-chevron-left'></i></div>","<div class='rounded-50'><i class='fa fa-chevron-right'></i></div>"]
             })
         }
     }

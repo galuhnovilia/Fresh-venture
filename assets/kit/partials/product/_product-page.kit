@@ -1,0 +1,93 @@
+<section class="product-page">
+    <!-- @import "../_breadcrumb.kit" -->
+    <div class="container">
+        <div class="title-product-page"><h2>Sweet Temptations & Moet Hamper</h2></div>
+
+        <div class="row product-single-slider">
+            <div class="col-md-7">
+                <div class="owl-carousel owl-theme" id="single-product-slider">
+                    <div class="item"><div class="wrap-image"><img src="assets/image/nopict2.PNG" alt=""></div></div>
+                    <div class="item"><div class="wrap-image"><img src="assets/image/nopict2.PNG" alt=""></div></div>
+                </div>
+
+                <div class="product-information">
+                    <p>This beautiful hamper offers the rare gift of slowing down for a moment to
+                        indulge in delectably simple luxuries. To begin the experience, we've selected
+                        bounty of our signature orchard-fresh fruit. Handpicked at the point of perfection,
+                        every flawless piece delivers orchard aromas and mouthwateringly fresh flavours.
+                        <a href="#" class="readmore with-underlined">Read more</a>
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="product-details">
+                    <h5>An irresistible collection of fruit, artisan specialities and French champagne.</h5>
+                    <div class="price d-flex">
+                        <div class="column"><h4 class="mb-0">$ 269</h4></div>
+                        <div class="column">
+                            <select class="form-control custom">
+                                <option selected="">CURRENCY</option>
+                                <option>$</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="size-guide d-flex">
+                        <div class="column">
+                            <select class="form-control">
+                                <option selected="">Large</option>
+                                <option>Small</option>
+                            </select>
+                        </div>
+                        <div class="column"><a href="#" class="with-underlined">Size Guide</a></div>
+                    </div>
+                    <div class="add-to-chart d-flex">
+                        <div class="column">
+                            <div class="number-input">
+                                <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" ></button>
+                                <input class="quantity" min="0" max="3" name="quantity" value="1" type="number">
+                                <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <button class="btn btn-secondary rounded-0" type="button"  data-toggle="modal" data-target="#modalAddtoChart"> <i class="fa fa-shopping-cart mr-2"></i>ADD TO CART</button>                            
+                        </div>
+
+                        <!-- modal -->
+                        <div class="modal fade" id="modalAddtoChart" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle"></h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body text-center">
+                                    <p>Item has been added to your chart</p>
+                                    <div class="button-wrap d-flex">
+                                        <button class="btn btn-secondary rounded-0 mr-3" type="button" >VIEW CART</button>
+                                        <button type="button" class="btn btn-outline-secondary rounded-0">CONTINUE SHOPPING</button>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end modal -->
+                    </div>
+
+                    <div class="postcode">
+                        <div class="box-postcode bg-light">
+                            <p>This Gift of Taste features orchard-fresh produce. Enter your postcode
+                                here to check we can deliver it to your address.
+                            </p>
+                            <div class="mx-auto d-flex">
+                                <input type="text" class="form-control mr-2" >
+                                <button class="btn btn-secondary rounded-0" type="button">CHECK</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -21,6 +21,7 @@ $text:#7D7D7D;
 .bg-light {background-color: $light !important;}
 .bg-info {background-color: $broken-white !important;}
 .bg-dark {background-color: $dark !important;}
+.breadcrumb{background-color: transparent!important;}
 *,body{color:$text;}
 // 
 .reverse-90 {transform: rotate(90deg);}
@@ -28,6 +29,8 @@ $text:#7D7D7D;
 .col-reverse{flex-direction: column-reverse;}
 .row-reverse{flex-direction: row-reverse;}
 .rounded-50{border-radius: 50%;}
+.with-underlined{text-decoration: underline;}
+select.form-control.custom {border: 0;}
 [disabled],[readonly] {
     background-color: transparent!important;
     border: 0;
@@ -61,6 +64,8 @@ $text:#7D7D7D;
 // +++++ END HEADER +++++ //
 
 // +++++ SLIDER +++++ //
+button.owl-next { right: 0px;}
+button.owl-prev{ left: 0px;}
 button.owl-prev,button.owl-next{
 	position: absolute;		
 	top: 0;
@@ -68,6 +73,7 @@ button.owl-prev,button.owl-next{
 	display: flex;
 	align-items: center;
 	&:focus{outline:0;}
+
 	.rounded-50{
 		display: flex;
 		align-items: center;
@@ -343,6 +349,8 @@ section.our-history {
 		padding: 10px 22px;
 		background-color: $light;
 		margin: 30px 0 25px;
+		align-items: center;
+		justify-content: space-between;
 	}
 	.title {
 		font-weight: bold;
@@ -374,6 +382,33 @@ section.contact-information{
 		}
 	}
 }
+// +++++ END CONTACT INFORMATION +++++ //
+
+// +++++ PRODUCT +++++ //
+section.product-page{padding: 80px 0;}
+#single-product-slider{
+	.wrap-image{padding: 20% 30%;}
+}
+.product-details{
+	.column{width: auto; padding-right:10px; }
+	
+	.price{
+		padding: 30px 0 20px;		
+	}
+	.size-guide{padding-bottom: 20px; .column{width: 50%; }}
+	.d-flex{align-items: center;}
+	.box-postcode {
+		padding: 30px;
+		margin-top: 25px;
+	}
+	.button-wrap{justify-content: center;padding: 30px 0;}
+}
+// +++++ END PRODUCT +++++ //
+
+// +++++ INPUT NUMBER +++++ //
+@import 'partials/_input-number.scss';
+// +++++ END INPUT NUMBER +++++ //
+
 // +++++ RESPONSIVE DEVICE +++++ //
 @import 'partials/_responsive.scss';
 // +++++ END RESPONSIVE +++++ //

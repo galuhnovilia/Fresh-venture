@@ -73,9 +73,15 @@
                     </div>
                 </li>
                 <div class="group d-flex">
-                    <li class="nav-item nav-users">
-                        <a class="nav-link " href="#" tabindex="-1" aria-disabled="true"><i class="fa fa-user" aria-hidden="true"></i>
+                    <li class="nav-item nav-users dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" tabindex="-1" aria-disabled="true" id="dropdownUser" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user" aria-hidden="true"></i>
                         </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownUser">
+                            <a class="dropdown-item" href="#">Profile</a>
+                            <a class="dropdown-item" href="#">Settings</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Log out</a>
+                        </div>
                     </li>
                     <li class="nav-item nav-separator">
                         <a class="nav-link px-0">|
@@ -544,7 +550,7 @@
 				</div>
 				<div class="input-group py-3">
 					<div class="col-md-5 mx-auto d-flex">
-						<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+						<input type="email" class="form-control mr-2" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
 						<button class="btn btn-secondary rounded-0" type="button">SUBSCRIBE</button>
 					</div>
 				</div>

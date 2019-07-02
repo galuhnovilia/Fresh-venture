@@ -73,9 +73,15 @@
                     </div>
                 </li>
                 <div class="group d-flex">
-                    <li class="nav-item nav-users">
-                        <a class="nav-link " href="#" tabindex="-1" aria-disabled="true"><i class="fa fa-user" aria-hidden="true"></i>
+                    <li class="nav-item nav-users dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" tabindex="-1" aria-disabled="true" id="dropdownUser" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user" aria-hidden="true"></i>
                         </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownUser">
+                            <a class="dropdown-item" href="#">Profile</a>
+                            <a class="dropdown-item" href="#">Settings</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Log out</a>
+                        </div>
                     </li>
                     <li class="nav-item nav-separator">
                         <a class="nav-link px-0">|
@@ -361,120 +367,140 @@
     <section class="our-history">
     <div class="container">
         <div class="order-title text-center"><h2>ORDER HISTORY</h2></div>
-        <h6 class="header">Showing 3 of 12 items</h6>
-        <div class="box-of-order">           
-            <div class="row">
-                <div class="col-md">
-                    <div class="bg-grey">
-                        <img src="assets/image/nopict3.PNG" alt="">
-                    </div>
-                </div>
-                <div class="col-md">
-                    <h6 class="title">Savoury Indulgence & Veuve</h6>
-                    <h6 class="title">Quantity : 2</h6>
-                    <h6 class="title">Price : $289</h6>
-                </div>
-                <div class="col-md">
-                    <h6 class="title">Delivery Address</h6>
-                    <h6>Adios Brown</h6>
-                    <h6>79 Longueville Rd Lane</h6>
-                    <h6>Cove NSW 2066</h6>
-                    <h6>T : 0428140812</h6>
-                </div>
-                <div class="col-md">
-                    <h6 class="title">Delivery Date</h6>
-                    <h6>Thursday 30th May</h6>
-                </div>
-                <div class="col-md">
-                    <h6 class="title">Purchase Date</h6>
-                    <h6>Friday 31st May</h6>
-                </div>
-            </div>
+        <div class="header d-flex">
+            <span>Showing 3 of 12 items</span>
+            <!-- nav tab -->
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="All-tab" data-toggle="tab" href="#All" role="tab" aria-controls="All" aria-selected="true">All</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="Re-order-tab" data-toggle="tab" href="#Re-order" role="tab" aria-controls="Re-order" aria-selected="false">Re-order</a>
+                </li>
+            </ul>
+        </div>
 
-            <div class="row">
-                <div class="col-md">
-                    <div class="bg-grey">
-                        <img src="assets/image/nopict3.PNG" alt="">
-                    </div>
-                </div>
-                <div class="col-md">
-                    <h6 class="title">Savoury Indulgence & Veuve</h6>
-                    <h6 class="title">Quantity : 2</h6>
-                    <h6 class="title">Price : $289</h6>
-                </div>
-                <div class="col-md">
-                    <h6 class="title">Delivery Address</h6>
-                    <h6>Adios Brown</h6>
-                    <h6>79 Longueville Rd Lane</h6>
-                    <h6>Cove NSW 2066</h6>
-                    <h6>T : 0428140812</h6>
-                </div>
-                <div class="col-md">
-                    <h6 class="title">Delivery Date</h6>
-                    <h6>Thursday 30th May</h6>
-                </div>
-                <div class="col-md">
-                    <h6 class="title">Purchase Date</h6>
-                    <h6>Friday 31st May</h6>
-                </div>
-            </div>
+        <!-- tab content -->
 
-            <div class="row">
-                <div class="col-md">
-                    <div class="bg-grey">
-                        <img src="assets/image/nopict3.PNG" alt="">
-                    </div>
-                </div>
-                <div class="col-md">
-                    <h6 class="title">Savoury Indulgence & Veuve</h6>
-                    <h6 class="title">Quantity : 2</h6>
-                    <h6 class="title">Price : $289</h6>
-                </div>
-                <div class="col-md">
-                    <h6 class="title">Delivery Address</h6>
-                    <h6>Adios Brown</h6>
-                    <h6>79 Longueville Rd Lane</h6>
-                    <h6>Cove NSW 2066</h6>
-                    <h6>T : 0428140812</h6>
-                </div>
-                <div class="col-md">
-                    <h6 class="title">Delivery Date</h6>
-                    <h6>Thursday 30th May</h6>
-                </div>
-                <div class="col-md">
-                    <h6 class="title">Purchase Date</h6>
-                    <h6>Friday 31st May</h6>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-md">
-                    <div class="bg-grey">
-                        <img src="assets/image/nopict3.PNG" alt="">
-                    </div>
-                </div>
-                <div class="col-md">
-                    <h6 class="title">Savoury Indulgence & Veuve</h6>
-                    <h6 class="title">Quantity : 2</h6>
-                    <h6 class="title">Price : $289</h6>
-                </div>
-                <div class="col-md">
-                    <h6 class="title">Delivery Address</h6>
-                    <h6>Adios Brown</h6>
-                    <h6>79 Longueville Rd Lane</h6>
-                    <h6>Cove NSW 2066</h6>
-                    <h6>T : 0428140812</h6>
-                </div>
-                <div class="col-md">
-                    <h6 class="title">Delivery Date</h6>
-                    <h6>Thursday 30th May</h6>
-                </div>
-                <div class="col-md">
-                    <h6 class="title">Purchase Date</h6>
-                    <h6>Friday 31st May</h6>
-                </div>
+        <div class="tab-content" id="myTabContent"> 
+            <div class="tab-pane fade show active" id="All" role="tabpanel" aria-labelledby="All-tab">
+                <div class="box-of-order">
+    <div class="row">
+        <div class="col-md">
+            <div class="bg-grey">
+                <img src="assets/image/nopict3.PNG" alt="">
             </div>
         </div>
+        <div class="col-md">
+            <h6 class="title">Savoury Indulgence & Veuve</h6>
+            <h6 class="title">Quantity : 2</h6>
+            <h6 class="title">Price : $289</h6>
+        </div>
+        <div class="col-md">
+            <h6 class="title">Delivery Address</h6>
+            <h6>Adios Brown</h6>
+            <h6>79 Longueville Rd Lane</h6>
+            <h6>Cove NSW 2066</h6>
+            <h6>T : 0428140812</h6>
+        </div>
+        <div class="col-md">
+            <h6 class="title">Delivery Date</h6>
+            <h6>Thursday 30th May</h6>
+        </div>
+        <div class="col-md">
+            <h6 class="title">Purchase Date</h6>
+            <h6>Friday 31st May</h6>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md">
+            <div class="bg-grey">
+                <img src="assets/image/nopict3.PNG" alt="">
+            </div>
+        </div>
+        <div class="col-md">
+            <h6 class="title">Savoury Indulgence & Veuve</h6>
+            <h6 class="title">Quantity : 2</h6>
+            <h6 class="title">Price : $289</h6>
+        </div>
+        <div class="col-md">
+            <h6 class="title">Delivery Address</h6>
+            <h6>Adios Brown</h6>
+            <h6>79 Longueville Rd Lane</h6>
+            <h6>Cove NSW 2066</h6>
+            <h6>T : 0428140812</h6>
+        </div>
+        <div class="col-md">
+            <h6 class="title">Delivery Date</h6>
+            <h6>Thursday 30th May</h6>
+        </div>
+        <div class="col-md">
+            <h6 class="title">Purchase Date</h6>
+            <h6>Friday 31st May</h6>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md">
+            <div class="bg-grey">
+                <img src="assets/image/nopict3.PNG" alt="">
+            </div>
+        </div>
+        <div class="col-md">
+            <h6 class="title">Savoury Indulgence & Veuve</h6>
+            <h6 class="title">Quantity : 2</h6>
+            <h6 class="title">Price : $289</h6>
+        </div>
+        <div class="col-md">
+            <h6 class="title">Delivery Address</h6>
+            <h6>Adios Brown</h6>
+            <h6>79 Longueville Rd Lane</h6>
+            <h6>Cove NSW 2066</h6>
+            <h6>T : 0428140812</h6>
+        </div>
+        <div class="col-md">
+            <h6 class="title">Delivery Date</h6>
+            <h6>Thursday 30th May</h6>
+        </div>
+        <div class="col-md">
+            <h6 class="title">Purchase Date</h6>
+            <h6>Friday 31st May</h6>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md">
+            <div class="bg-grey">
+                <img src="assets/image/nopict3.PNG" alt="">
+            </div>
+        </div>
+        <div class="col-md">
+            <h6 class="title">Savoury Indulgence & Veuve</h6>
+            <h6 class="title">Quantity : 2</h6>
+            <h6 class="title">Price : $289</h6>
+        </div>
+        <div class="col-md">
+            <h6 class="title">Delivery Address</h6>
+            <h6>Adios Brown</h6>
+            <h6>79 Longueville Rd Lane</h6>
+            <h6>Cove NSW 2066</h6>
+            <h6>T : 0428140812</h6>
+        </div>
+        <div class="col-md">
+            <h6 class="title">Delivery Date</h6>
+            <h6>Thursday 30th May</h6>
+        </div>
+        <div class="col-md">
+            <h6 class="title">Purchase Date</h6>
+            <h6>Friday 31st May</h6>
+        </div>
+    </div>
+</div>
+            </div>
+            <div class="tab-pane fade" id="Re-order" role="tabpanel" aria-labelledby="Re-order-tab">...</div>
+        </div>
+        
     </div>
 </section>
 	<footer class="mastfoot">
@@ -556,7 +582,7 @@
 				</div>
 				<div class="input-group py-3">
 					<div class="col-md-5 mx-auto d-flex">
-						<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+						<input type="email" class="form-control mr-2" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
 						<button class="btn btn-secondary rounded-0" type="button">SUBSCRIBE</button>
 					</div>
 				</div>
