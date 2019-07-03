@@ -15,6 +15,7 @@ $bg-secondary: #A5A5A5;
 $secondary: #9F9F9F;
 $text:#7D7D7D;
 .btn-secondary {background-color: $secondary; color: $white; border-color: $secondary; }
+.btn-secondary.disabled,.btn-secondary:disabled {background-color: lightgray;border-color: lightgray;}
 .btn-primary {background-color: $primary; border-color: $primary; color: grey;}
 .btn-outline-secondary{color: $secondary;    border-color: $secondary;}
 .bg-secondary {background-color: $bg-secondary !important;}
@@ -31,7 +32,7 @@ $text:#7D7D7D;
 .rounded-50{border-radius: 50%;}
 .with-underlined{text-decoration: underline;}
 select.form-control.custom {border: 0;}
-[disabled],[readonly] {
+[disabled]:not(button),[readonly]:not(button) {
     background-color: transparent!important;
     border: 0;
     -webkit-appearance: none;
@@ -406,8 +407,15 @@ section.product-page{padding: 80px 0;}
 // +++++ END PRODUCT +++++ //
 
 // +++++ MULTIPLE PRODUCT +++++ //
-section.multiple-product-cart{
+section.multiple-product-cart,
+section.multiple-product-address{
 	padding: 80px 0;
+}
+.row-items{
+	&.text {
+		margin-top: 15px;
+		margin-bottom: 30px;
+	}
 }
 .box-shopping-cart{
 	padding: 80px 0 0px;
@@ -439,22 +447,22 @@ section.multiple-product-cart{
 .box-steps{
 	justify-content: space-around;
 	.steps {
-		width: 25%;
 		text-align: center;
 		position: relative;
-		&:not(:last-child) .rounded-50:after {
+		&:not(:first-child) .rounded-50:before {
 			content: '';
 			width: calc(100% - 50px);
 			height: 2px;
 			background-color: $light;
 			position: absolute;
-			right: calc(-50% + (25px));
+			right: calc(50% + (25px));
 		}
 		h6{font-weight: 400;}
 		&.active{
 			.rounded-50{
 				background-color: $text;
 				color: white;
+				&:before{background-color: $text;}
 			}
 			h6{font-weight: bold;}
 		}
@@ -473,6 +481,14 @@ section.multiple-product-cart{
     padding: 15px;
     border: solid 1px;
     margin-top: 15px;
+}
+.box-address-form {
+	padding: 15px 0;
+	.child-address{ 
+		>[class*="col-md"]{
+			margin-bottom: 30px;
+		}
+	}
 }
 // +++++ END MULTIPLE PRODUCT +++++ //
 
